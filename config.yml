@@ -1,0 +1,104 @@
+baseURL: "/"   # the deploy workflow sets the real URL from the repo name
+title: Camille Le Bihan — At a Glance
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+pagination:
+  pagerSize: 20
+
+taxonomies:
+    tag: tags
+
+menu:
+    main:
+        - name: Projects
+          url: projects/
+          weight: 1
+        - name: Coursework
+          url: coursework/
+          weight: 2
+        - name: About
+          url: about/
+          weight: 3
+        - name: Writing
+          url: https://substack.com/@camillelebihan
+          weight: 4
+
+params:
+    description: "Camille Le Bihan at a glance — finance student, founder of iPREP, and builder of small AI tools. Projects, coursework, and background."
+    author: Camille Le Bihan
+    DateFormat: January 2006
+    defaultTheme: light
+    hideFooter: false
+    disableThemeToggle: true
+    ShowShareButtons: false
+    ShowReadingTime: false
+    hideAuthor: true
+    disableSpecial1stPost: true
+    disableAnchoredHeadings: true
+    ShowPostNavLinks: false
+    ShowBreadCrumbs: false
+    ShowCodeCopyButtons: true
+    ShowAllPagesInArchive: false
+    MainSections: [projects, coursework]
+    ShowToc: false
+    disableScrollToTop: true
+    TocOpen: true
+    ShowWordCount: false
+    UseHugoToc: true
+    comments: false
+    math: false
+    profileMode:
+          enabled: true
+          title: Camille Le Bihan
+          subtitle: "I study corporate finance at ESSCA (Paris) and I'm on a gap year working in investor relations at Sowefund, an equity crowdfunding platform. I founded iPREP, an AI career-coaching platform, and I build small AI tools on the side. I'm heading toward venture capital — and I want to be fluent in AI on both the technical and strategic side."
+          # Add a square photo as static/picture.jpeg, then uncomment the three lines below.
+          # imageUrl: picture.jpeg
+          # imageWidth: 160
+          # imageHeight: 160
+          buttons:
+            - name: Projects
+              url: projects/
+            - name: Coursework
+              url: coursework/
+            - name: About
+              url: about/
+            - name: Writing
+              url: https://substack.com/@camillelebihan
+
+    socialIcons:
+        # Add your CV as static/cv.pdf, then uncomment:
+        # - name: CV
+        #   url: cv.pdf
+        # Add the address you want public, then uncomment:
+        # - name: Email
+        #   url: mailto:you@example.com
+        - name: LinkedIn
+          url: https://www.linkedin.com/in/camille-le-bihan/
+        - name: GitHub
+          url: https://github.com/camillelebihan
+        - name: Substack
+          url: https://substack.com/@camillelebihan
+
+    assets:
+        disableScrollBarStyle: true
+    cover:
+        hiddenInList: false
+        hiddenInSingle: true
+    label:
+      text: Camille Le Bihan
+      icon: favicon.ico
+      iconHeight: 18
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        guessSyntax: true
+        style: autumn
+    tableOfContents:
+        endLevel: 2
+        ordered: false
+        startLevel: 2
