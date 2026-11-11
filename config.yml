@@ -1,5 +1,5 @@
-baseURL: "/"   # the deploy workflow sets the real URL from the repo name
-title: Camille Le Bihan — At a Glance
+baseURL: "https://camillelebihan.github.io/at-a-glance/"
+title: Camille Le Bihan, At a Glance
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -26,7 +26,7 @@ menu:
           weight: 4
 
 params:
-    description: "Camille Le Bihan at a glance — finance student, founder of iPREP, and builder of small AI tools. Projects, coursework, and background."
+    description: "Camille Le Bihan at a glance, finance student, founder of iPREP, and builder of small AI tools. Projects, coursework, and background."
     author: Camille Le Bihan
     DateFormat: January 2006
     defaultTheme: light
